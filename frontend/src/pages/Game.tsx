@@ -1,7 +1,13 @@
-import { Heading } from "@chakra-ui/react";
+import Board from "../components/Board";
+import { Flex, Heading } from "@chakra-ui/react";
 
 const Game: React.FC = () => {
-  return <Heading>Game</Heading>;
+  return (
+    <Flex flexDir="column">
+      <Heading>Game</Heading>
+      <Board />
+    </Flex>
+  );
 };
 
 export default Game;
