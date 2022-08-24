@@ -1,8 +1,8 @@
 import { Box, Flex } from "@chakra-ui/react";
 import { Link, Route, Routes } from "react-router-dom";
 import AxeButton from "./components/AxeButton";
-import Game from "@/pages/Game";
-import Home from "@/pages/Home";
+import Game from "./pages/Game";
+import Home from "./pages/Home";
 
 const App: React.FC = () => {
   return (
