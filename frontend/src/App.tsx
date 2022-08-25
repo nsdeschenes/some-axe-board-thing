@@ -3,6 +3,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import AxeButton from "./components/AxeButton";
 import Game from "./pages/Game";
 import Home from "./pages/Home";
+import { PusherProvider } from "./utils/pusher";
 
 const App: React.FC = () => {
   return (
@@ -19,7 +20,14 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/">
             <Route index element={<Home />} />
-            <Route path="game" element={<Game />} />
+            <Route
+              path="game"
+              element={
+                <PusherProvider slug="board">
+                  <Game />
+                </PusherProvider>
+              }
+            />
           </Route>
         </Routes>
       </Box>
