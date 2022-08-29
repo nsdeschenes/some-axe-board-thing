@@ -29,7 +29,7 @@ const Board: React.FC = () => {
   return (
     <Box>
       <Flex flexDirection="row">
-        <Box width="750px" p="1em">
+        <Box width="500px" p="1em">
           <svg viewBox="0 0 500 500">
             <rect
               width={500}
